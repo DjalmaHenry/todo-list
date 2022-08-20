@@ -4,8 +4,13 @@ import { styles } from "./styles";
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 import { Trash } from "phosphor-react-native";
 
-export default function Task() {
-  function handleTaskDelete() {}
+type Props = {
+  name: string;
+  onCheck: (isChecked: boolean) => void;
+  onDelete: () => void;
+};
+
+export default function Task({ name, onCheck, onDelete }: Props) {
   return (
     <View style={styles.container}>
       <BouncyCheckbox
@@ -13,14 +18,14 @@ export default function Task() {
         size={25}
         fillColor="#1E6F9F"
         unfillColor="#1F1E25"
-        text="Custom Checkbox"
+        text={name}
         iconStyle={{ borderColor: "#1E6F9F" }}
         innerIconStyle={{ borderWidth: 2 }}
-        textStyle={{ fontFamily: "JosefinSans-Regular" }}
-        onPress={(isChecked: boolean) => {}}
+        textStyle={{ textAlign: "center" }}
+        onPress={onCheck}
       />
 
-      <TouchableOpacity style={styles.deleteButton} onPress={handleTaskDelete}>
+      <TouchableOpacity style={styles.deleteButton} onPress={onDelete}>
         <Trash color="gray" size={24} />
       </TouchableOpacity>
     </View>

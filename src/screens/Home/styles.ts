@@ -38,28 +38,32 @@ export const styles = StyleSheet.create({
         alignItems: "center"
     },
 
-    infoContainer:{
+    infoContainer: {
         width: "100%",
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
         marginTop: 24
     },
-    info:{
+
+    info: {
         flexDirection: "row",
-        alignItems: "center",   
+        alignItems: "center",
     },
-    createdInfo:{
+
+    createdInfo: {
         color: "#4EA8DE",
         fontSize: 16,
         fontWeight: "bold",
     },
-    completedInfo:{
+
+    completedInfo: {
         color: "#8284FA",
         fontSize: 16,
         fontWeight: "bold",
     },
-    counterContainer:{
+
+    counterContainer: {
         width: 30,
         height: 30,
         borderRadius: 10,
@@ -68,9 +72,35 @@ export const styles = StyleSheet.create({
         justifyContent: "center",
         marginLeft: 5
     },
-    counter:{
+
+    counter: {
         color: "#fff",
         fontSize: 16,
         fontWeight: "bold",
     },
+
+    emptyList: {
+        width: "100%",
+        flex: 1,
+        borderTopColor: "#1F1E25",
+        borderTopWidth: 2,
+        marginTop: 24,
+        paddingVertical: 24,
+        alignItems: "center",
+    },
+    emptyListTextPrimary: {
+        color: "#6B6B6B",
+        fontSize: 16,
+        fontWeight: "bold",
+        marginTop: 24,
+    },
+    emptyListTextSecondary: {
+        color: "#6B6B6B",
+        fontSize: 16,
+        marginTop: 8,
+    },
+    list: {
+        width: "100%",
+        flex: 1,
+    }
 });
