@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="daily journey" title="daily-journey" src="https://user-images.githubusercontent.com/45500812/184544769-f6d533fc-d864-4469-9f3e-50d35fd39e69.svg" />
+  <img alt="daily journey" title="daily-journey" src="https://user-images.githubusercontent.com/45500812/185770836-a71d4ff0-01e6-4c7a-9bfb-93fe2e0225a4.svg" width="20%" />
 </h1>
 
 <p align="center">
